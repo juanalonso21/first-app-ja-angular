@@ -1,19 +1,20 @@
-import {Component} from '@angular/core';
-import {HomeComponent} from './home/home.component';
+import { Component } from "@angular/core";
+import { HomeComponent } from "./home/home.component";
+
 @Component({
   selector: 'app-root',
   imports: [HomeComponent],
-  template: `    
-  <main>
-  <header class="brand-name">
-    HOMES
-  </header>
-  <section class="content">
-    <app-home></app-home>
-  </section>
-</main>
-`,
-styleUrls: ['./app.component.css'],
+  template: `
+    <main>
+      <header class="brand-name">
+        <img class="brand-logo" src="logo.svg" alt="logo" aria-hidden="true" />
+      </header>
+      <section class="content">
+        <app-home></app-home>
+      </section>
+    </main>
+  `,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'homes';
